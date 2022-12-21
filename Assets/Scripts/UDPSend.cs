@@ -25,9 +25,11 @@ public class UDPSend : MonoBehaviour
     UdpClient client;
     string strMessage="";
    
+
     private static void Main()
     {
-        UDPSend sendObj=new UDPSend();
+        return;
+        UDPSend sendObj = new UDPSend();
         sendObj.init();
         sendObj.sendEndless(" endless infos \n");
     }

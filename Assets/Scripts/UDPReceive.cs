@@ -38,7 +38,8 @@ public class UDPReceive : MonoBehaviour {
     // start from shell
     private static void Main()
     {
-       UDPReceive receiveObj=new UDPReceive();
+        return;
+        UDPReceive receiveObj=new UDPReceive();
        receiveObj.init();
  
         string text="";
@@ -80,7 +81,6 @@ public class UDPReceive : MonoBehaviour {
             new ThreadStart(ReceiveData));
         receiveThread.IsBackground = true;
         receiveThread.Start();
- 
     }
  
     // receive thread
